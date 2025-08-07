@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;  
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;        
+}
+.hdr__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hdr__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+.hdr__item:hover{
+    color: #ffffff;         
+    transform: scale(1.08);
+}
+.hdr__left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hdr__link{
+    color: #000000;
+    font-family: "Inter";
+    font-size: 14.88px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+.hdr__btn::before{
+    background-image: url("./images/location.svg\ fill.png");
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hdr__btn{
+    margin-bottom: 7px;
+    padding: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Inter";
+    font-size: 14.75px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 256px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #fc004a;
+    transition: 0.5s ease-in-out;
+}
+.hdr__burger{
+    border: none;
+    display: none;
+    background-color: transparent;
+}
+.hdr__btn:hover{
+    background: #d4003f;
+    color: #ffffff;         
+    transform: scale(1.03);
+}
+.hdr__btn:active {
+    transform: scale(0.95);
+    background-color: #a80034;
+}
+.hero__wrapper{
+    width: 100%;
+}
+.hero__wrapper img{
+    padding-top: 50px;
+    width: 100%;
+}
+.desktop{
+    border-radius: 20px
+}
+.tablet{
+    display: none;
+}
+.mobile{
+    display:none
+}
+
+@media(max-width:733px){
+    .logo{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
+@media(max-width:550px){
+    .hdr__list{
+        display: none;
+    }
+    .hdr__burger{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .ftr__title{
+        flex-wrap: wrap;
+    }
+}
+.card__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    justify-content: space-around;
+    box-shadow: 0px 4px 6px -4px #0000001a,0px 10px 15px -3px #0000001a;
+    
+}
+.card__btn{
+    width: 35px;
+    height: 35px;
+}
+.card{
+    padding: 0 20px;
+}
+.card__title{
+    margin:56px;
+    color: #262626;
+    font-family: "Inter";
+    font-size: 32.48px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.card__item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    
+    box-shadow: #0000003d 0px 3px 8px;
+}
+.card__name{
+    color: #000000;
+    font-family: Inter;
+    font-size: 17.81px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.card__price{
+    font-family: "inter";
+    color: #fc004a;
+    font-size: 18.28px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.card__btn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: auto;
+}
+footer{
+    margin: 60px;
+}
+.ftr__title{
+    color: #000000;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.ftr__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
